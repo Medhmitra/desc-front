@@ -63,7 +63,7 @@ const handleGenerate = async (action) => {
     try {
       console.log("Prompt generated:", prompt);
 
-      const response = await fetch("http://localhost:5000/generate", {
+      const response = await fetch("https://desc-back.vercel.app/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
